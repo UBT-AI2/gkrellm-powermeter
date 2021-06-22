@@ -10,7 +10,7 @@ Install:
 	-	/usr/local/lib/gkrellm2/plugins/
 	-	/usr/lib/gkrellm2/plugins/
 	
--	alternatively, run gkrellm -p <plugin> to test the plugin temporarily
+-	alternatively, run gkrellm -p libgkrellm-powermeter.so to test the plugin temporarily
 
 Run:
 
