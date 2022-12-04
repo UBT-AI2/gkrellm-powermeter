@@ -6,7 +6,7 @@
 
 #include <gkrellm2/gkrellm.h>
 
-#define STYLE_NAME "gkrellm_powermeter"
+#define STYLE_NAME "powermeter"
 #define POWERMETER_CONFIG_KEYWORD "powermeter"
 
 static GkrellmMonitor plugin_mon;
