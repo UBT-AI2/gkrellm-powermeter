@@ -1,16 +1,18 @@
 Build: 
 
 -	cmake CMakeLists.txt
--	make
+-	make -j$(nproc)
 
 Install:
 
--	copy the resulting .so into one of the following folders:
+-	strip libgkrellm-powermeter.so
+-	mv libgkrellm-powermeter.so gkrellm-powermeter.so
+-	copy gkrellm-powermeter.so into one of the following folders:
 	-	~/.gkrellm2/plugins/
 	-	/usr/local/lib/gkrellm2/plugins/
 	-	/usr/lib/gkrellm2/plugins/
 	
--	alternatively, run gkrellm -p libgkrellm-powermeter.so to test the plugin temporarily
+-	alternatively, run gkrellm -p gkrellm-powermeter.so to test the plugin temporarily
 
 Run:
 

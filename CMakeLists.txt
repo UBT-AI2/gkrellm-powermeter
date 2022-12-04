@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.10)
 add_subdirectory(powermeter_library)
 add_subdirectory(progmanager_library)
 
-project(gkrellm_powermeter C)
+project(gkrellm-powermeter C)
 set(CMAKE_C_STANDARD 11)
 
 #SET(CMAKE_CXX_FLAGS "-O0")
@@ -19,7 +19,7 @@ include_directories (${GTK2_INCLUDE_DIRS})
 link_directories (${GTK2_LIBRARY_DIRS})
 add_definitions (${GTK2_CFLAGS_OTHER})
 
-add_library(gkrellm_powermeter SHARED gkrellm_powermeter.c gkrellm_powermeter.h)
+add_library(gkrellm-powermeter SHARED gkrellm-powermeter.c gkrellm-powermeter.h)
 
 
 ## IMPORT powermeter_library
@@ -41,4 +41,4 @@ add_library(gkrellm_powermeter SHARED gkrellm_powermeter.c gkrellm_powermeter.h)
 #        IMPORTED_LINK_INTERFACE_LANGUAGES "CXX")
 
 
-target_link_libraries (gkrellm_powermeter ${GTK2_LIBRARIES} powermeter_library  progmanager_library stdc++)
+target_link_libraries (gkrellm-powermeter ${GTK2_LIBRARIES} powermeter_library  progmanager_library stdc++)

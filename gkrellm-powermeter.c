@@ -1,4 +1,4 @@
-#include "gkrellm_powermeter.h"
+#include "gkrellm-powermeter.h"
 #include "powermeter_library/powermeter_library.h"
 #include "progmanager_library/progmanager_library_c.h"
 
@@ -7,7 +7,7 @@
 
 static GkrellmMonitor plugin_mon =
 		{
-				"gkrellm_powermeter",        /* Name, for config tab.    */
+				"powermeter",        /* Name, for config tab.    */
 				0,                  /* Id,  0 if a plugin       */
 				create_plugin,      /* The create function      */
 				update_plugin,      /* The update function      */
